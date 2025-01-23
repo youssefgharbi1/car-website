@@ -1,0 +1,113 @@
+/* Spécifique à la page d'accueil */
+
+/* Conteneur principal */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* Titre de la page d'accueil */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 28px;
+}
+
+/* Formulaire spécifique de la page d'accueil */
+form {
+    margin-top: 20px;
+}
+
+/* Label spécifique aux champs du formulaire */
+label {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+/* Inputs et sélecteurs dans le formulaire d'accueil */
+input[type="text"], input[type="number"], input[type="submit"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Les boutons de type radio pour le formulaire */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Les boutons de soumission de formulaire */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Les bordures et l'espacement des éléments de formulaire */
+form input, form select {
+    margin-top: 10px;
+}
+
+/* Message de bienvenue en haut de la page */
+#welcome-message {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+.vehicule {
+    width: 30%;
+
+    margin: 8px 0 25px 0;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #333;  /* Changed to a lighter color */
+    color: #f4f4f4;  /* Ensures the text is visible */
+}
+
+.vehicule img {
+    width: 100%;
+    height: auto;         /* Ensures the aspect ratio is maintained */
+    /*object-fit: fill ;  /* contain or 'cover' or 'fill' */
+    margin-bottom: 10px;
+}
+
+#vehicule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
